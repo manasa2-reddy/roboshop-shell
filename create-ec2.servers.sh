@@ -3,7 +3,7 @@
 ##### Change these values ###
 ZONE_ID="Z075358629IBJXB7AQLTD"
 DOMAIN="devopsb71.store"
-SG_NAME="allow-all"
+SG_NAME="allowall"
 #############################
 
 
