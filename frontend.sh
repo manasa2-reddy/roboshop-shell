@@ -21,4 +21,3 @@ systemctl enable nginx
 
 echo -e "\e[35mStarting nginx\e[om"
 systemctl restart nginx
-
