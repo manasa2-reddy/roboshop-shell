@@ -6,7 +6,7 @@ yum install nginx -y
 echo -e "\e[35MRemoving old content\e[om"
 rm -rf /usr/share/nginx/html/*
 
-echo -e "\e[35mDownloading Frontend content\e[om""]
+echo -e "\e[35mDownloading Frontend content\e[om"
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
 
 echo -e "\e[35mExtracting Downloaded Frontend \e[om"
