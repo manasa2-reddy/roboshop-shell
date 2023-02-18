@@ -1,9 +1,9 @@
 code-dir=$(pwd)
 
- echo -e "\e[35mInstalling nginx\e[0m"
+echo -e "\e[35mInstalling nginx\e[0m"
 yum install nginx -y
 
-echo -e[35MRemoving old content\e[om"
+echo -e "\e[35MRemoving old content\e[om"
 rm -rf /usr/share/nginx/html/*
 
 echo -e "\e[35mDownloading Frontend content\e[om""]
