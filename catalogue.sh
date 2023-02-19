@@ -45,4 +45,4 @@ yum install mongodb-org-shell -y &>>${log_file}
 
 
 print_head "Load Schema"
-mongo --host mongodb.71.store </app/schema/catalogue.js &>>${log_file}
+mongo --host mongodb.devopsb71.store </app/schema/catalogue.js &>>${log_file}
