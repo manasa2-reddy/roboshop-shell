@@ -1,18 +1,19 @@
 source common.sh
 
 print_head "setup MongoDB repository"
-cp config/mongodb.repo /etc/yum.repos.d/mongo.repo
+cp ${code_dir}/config/mongodb.repo /etc/yum.repos.d/mongo.repo &>>${log_file}
 
 print_head "Install MongoDB"
-yum install mongodb-org -y
+yum install mongodb-org -y &>>${log_file}
 
 print_head"Udate MongoDB listen Address"
-sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf &>>${log_file}
+
 print_head "Enable MongoDB"
-systemctl enable mongod
+systemctl enable mongod &>>${log_file}
 
 print_head "start MongoDB Service"
-systemctl restart mongod
+systemctl restart mongod &>>${log_file}
 
 
 
