@@ -3,7 +3,7 @@ source common.sh
 print_head "configure NodeJS Repo"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>${log_file}
 
-print_head "Install NodeJS "
+print_head "Install NodeJS"
 yum install nodejs -y &>>${log_file}
 
 print_head "Create Roboshop User"
@@ -38,7 +38,7 @@ print_head "Start Catalogue Service"
 systemctl restart mongod &>>${log_file}
 
 print_head "Copy MongoDB Repo File"
-cp config/mondod.repo /etc/yum.repos.d/mongodb.repo &>>${log_file}
+cp config/mongod.repo /etc/yum.repos.d/mongodb.repo &>>${log_file}
 
 print_head "Install Mongo Client"
 yum install mongodb-org-shell -y &>>${log_file}
