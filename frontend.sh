@@ -3,7 +3,7 @@ source common.sh
 print_head "Installing nginx"
 yum install nginx -y &>>${log_file}
 
-print_head"Removing old content"
+print_head "Removing old content"
 rm -rf /usr/share/nginx/html/* &>>${log_file}
 
  print_head "Downloading Frontend content"
