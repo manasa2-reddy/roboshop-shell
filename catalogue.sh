@@ -38,7 +38,7 @@ print_head "Start Catalogue Service"
 systemctl restart mongod &>>${log_file}
 
 print_head "Copy MongoDB Repo File"
-cp config/mongodb.repo /etc/yum.repos.d/mongodb.repo &>>${log_file}
+cp ${code_dir}/config/mongodb.repo /etc/yum.repos.d/mongodb.repo &>>${log_file}
 
 print_head "Install Mongo Client"
 yum install mongodb-org-shell -y &>>${log_file}
