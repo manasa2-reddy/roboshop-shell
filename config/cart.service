@@ -7,3 +7,6 @@ Environment=REDIS_HOST=redis-dev.devopsb71.store
 Environment=CATALOGUE_HOST=catalogue-dev.devopsb71.store
 ExecStart=/bin/node /app/server.js
 SyslogIdentifier=cart
+
+[Install]
+WantedBy=multi-user.target
